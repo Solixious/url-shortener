@@ -1,4 +1,4 @@
-package com.urlshortener;
+package com.urlshortener.service;
 
 public class UrlShortenerUtil {
 

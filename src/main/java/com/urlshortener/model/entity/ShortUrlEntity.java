@@ -1,6 +1,6 @@
 package com.urlshortener.model.entity;
 
-import com.urlshortener.UrlShortenerUtil;
+import com.urlshortener.service.UrlShortenerUtil;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

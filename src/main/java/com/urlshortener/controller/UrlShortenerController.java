@@ -26,7 +26,7 @@ public class UrlShortenerController {
         }
     }
 
-    @GetMapping(UrlMapping.REDIRECT)
+    @GetMapping(UrlMapping.GET_ORIGINAL)
     public RedirectUrlResponse redirectUrl(@PathVariable final String key) {
         try {
             return RedirectUrlResponse.builder().redirectUrl(urlShortenerService.getRedirectUrl(key)).build();
