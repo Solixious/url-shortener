@@ -20,10 +20,6 @@ public class EnvUtil {
         return port;
     }
 
-    public Integer getPortAsInt() {
-        return Integer.valueOf(getPort());
-    }
-
     public String getHostname() throws UnknownHostException {
         // TODO ... would this cache cause issue, when network env change ???
         if (hostname == null) hostname = InetAddress.getLocalHost().getHostAddress();
