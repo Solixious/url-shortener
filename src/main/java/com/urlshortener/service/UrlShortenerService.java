@@ -22,7 +22,7 @@ public class UrlShortenerService {
         try {
             ShortUrlEntity entity = ShortUrlEntity.builder().urlOriginal(url).build();
             repository.save(entity);
-            return envUtil.getServerUrlPrefix() + entity.getUrlKey();
+            return envUtil.getServerUrlPrefix() + "api/" +entity.getUrlKey();
         } catch (UnknownHostException e) {
             log.error("An error occurred while retrieving hostname.", e);
             throw e;

@@ -8,7 +8,7 @@ public class UrlShortenerUtil {
 
     public static String getKey(final Long id) {
         StringBuilder sb = new StringBuilder();
-        long num = OFFSET + id;
+        long num = OFFSET + id + System.nanoTime();
         int length = CHAR_SET.length;
         while(num > 0) {
             int rem = (int)(num % length);
